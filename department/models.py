@@ -7,7 +7,7 @@ class Department(models.Model):
     updateBy = models.CharField(max_length=250, null=False)
     createAt = models.DateTimeField(null=True, blank=True)
     updateAt = models.DateTimeField(null=True, blank=True)
-    users = models.ForeignKey('user.user', related_name='user', on_delete=models.CASCADE, null=True)
+    users = models.ForeignKey('user.user', related_name='user', on_delete=models.CASCADE, null=True, blank=True)
 
 
     def __str__(self):

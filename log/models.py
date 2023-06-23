@@ -10,7 +10,7 @@ class Log(models.Model):
     updateBy = models.CharField(max_length=250, null=False)
     createAt = models.DateTimeField(null=True, blank=True)
     updateAt = models.DateTimeField(null=True, blank=True)
-    okrs_id = models.ForeignKey('OKRs.okrs', related_name='okrs', on_delete=models.CASCADE, null=True)
+    okrs_id = models.ForeignKey('OKRs.Okr', related_name='okr_log', on_delete=models.CASCADE, null=True)
     def __str__(self):
         return self.name
 

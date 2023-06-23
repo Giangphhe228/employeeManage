@@ -2,7 +2,7 @@
 from django.db import models
 from rest_framework import serializers
 from .models import Okr
-
+from django.contrib.postgres.fields import ArrayField
 
 class OkrSerializer(serializers.ModelSerializer):
     objectiveId = serializers.IntegerField()
@@ -28,7 +28,7 @@ class OkrSerializer(serializers.ModelSerializer):
     createAt = serializers.DateTimeField()
     updateAt = serializers.DateTimeField()
     deadline = serializers.DateTimeField()
-    files = serializers.ArrayField()
+    files = ArrayField(models.CharField(max_length=100))
     
     class Meta:
         model = Okr

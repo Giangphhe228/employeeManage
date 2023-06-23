@@ -9,7 +9,7 @@ from rest_framework.generics import GenericAPIView
 from rest_framework.views import APIView
 
 # Create your views here.
-class FormulaViewSet(APIView):
+class NoteViewSet(APIView):
     queryset = Note.objects.all()
     serializer_class = NoteSerializer
     permission_classes = (AllowAny,)
