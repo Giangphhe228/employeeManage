@@ -30,5 +30,7 @@ urlpatterns = [
     path("source/", include("source.urls")),
     path("note/", include("note.urls")),
     path("log/", include("log.urls")),
-    path("okrs/", include("OKRs.urls"))
+    path("okrs/", include("OKRs.urls")),
+    path("role/", include("role.urls")),
+    path("permission/", include("permission.urls"))
 ]

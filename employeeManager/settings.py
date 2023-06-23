@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     "note",
     "log",
     "OKRs",
+    "role",
+    "permission"
 ]
 
 MIDDLEWARE = [

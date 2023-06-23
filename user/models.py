@@ -27,7 +27,7 @@ class User(models.Model):
     dateIn = models.DateTimeField(null=True, blank=True)
     dateOut = models.DateTimeField(null=True, blank=True)
     okrs_id = models.ForeignKey('OKRs.Okr', related_name='user_okr', on_delete=models.CASCADE, null=True, blank=True)
-    
+    role_id = models.ForeignKey('role.role', related_name='user_role', on_delete=models.CASCADE, null=True, blank=True)
 
 
     def __str__(self):
