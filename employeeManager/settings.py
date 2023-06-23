@@ -42,6 +42,11 @@ INSTALLED_APPS = [
     "manager",
     "department",
     "user",
+    "formula",
+    "source",
+    "note",
+    "log",
+    "OKRs",
 ]
 
 MIDDLEWARE = [

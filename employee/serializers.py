@@ -5,9 +5,9 @@ from .models import Employee
 
 
 class EmpSerializer(serializers.ModelSerializer):
-    department_id = models.CharField(max_length=250)
-    name = models.CharField(max_length=250)
-    position= models.CharField(max_length=50)
+    department_id = serializers.CharField(max_length=250)
+    name = serializers.CharField(max_length=250)
+    position= serializers.CharField(max_length=50)
 
     class Meta:
         model = Employee

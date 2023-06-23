@@ -26,7 +26,7 @@ class User(models.Model):
     level= models.CharField(max_length=50, default='0', choices=LEVEL_TYPE_CHOICE)
     dateIn = models.DateTimeField(null=True, blank=True)
     dateOut = models.DateTimeField(null=True, blank=True)
-    
+    okrs_id = models.ForeignKey('OKRs.okrs', related_name='okrs', on_delete=models.CASCADE, null=True)
     
 
 

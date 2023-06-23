@@ -26,4 +26,9 @@ urlpatterns = [
     path("employee/", include("employee.urls")),
     path("manager/", include("manager.urls")),
     path("user/", include("user.urls")),
+    path("formula/", include("formula.urls")),
+    path("source/", include("source.urls")),
+    path("note/", include("note.urls")),
+    path("log/", include("log.urls")),
+    path("okrs/", include("OKRs.urls"))
 ]

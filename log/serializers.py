@@ -10,10 +10,11 @@ class LogSerializer(serializers.ModelSerializer):
     updateBy = serializers.CharField(max_length=250)
     createAt = serializers.DateTimeField()
     updateAt = serializers.DateTimeField()
+    okrs_id = serializers.CharField(max_length=250)
 
     class Meta:
         model = Log
-        fields = ['note', 'createBy','updateBy', 'createAt', 'updateAt']
+        fields = ['note', 'createBy','updateBy', 'createAt', 'updateAt','okrs_id']
         ordering = ['-id']
 
 

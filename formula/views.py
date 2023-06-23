@@ -9,7 +9,7 @@ from rest_framework.generics import GenericAPIView
 from rest_framework.views import APIView
 
 # Create your views here.
-class DepartViewSet(APIView):
+class FormulaViewSet(APIView):
     queryset = Formula.objects.all()
     serializer_class = ForSerializer
     permission_classes = (AllowAny,)
