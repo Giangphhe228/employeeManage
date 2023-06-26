@@ -9,7 +9,7 @@ from rest_framework.generics import GenericAPIView
 from rest_framework.views import APIView
 
 # Create your views here.
-class RoleViewSet(APIView):
+class PerViewSet(APIView):
     queryset = Permission.objects.all()
     serializer_class = PerSerializer
     permission_classes = (AllowAny,)

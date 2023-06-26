@@ -1,7 +1,7 @@
 from django.urls import path
-from .views import RoleViewSet
+from .views import PerViewSet
 
  
 urlpatterns = [
-    path("get-role/", RoleViewSet.as_view())
+    path("get-per/", PerViewSet.as_view())
 ]
