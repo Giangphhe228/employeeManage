@@ -1,0 +1,17 @@
+version: '3.9'
+  # "proxies": {"redacted": "redacted"},
+services:
+  django:
+    image: django-docker:0.0.1
+    build: .
+    ports:
+      - "8000:8000"
+
+# "proxies":{"default":{
+
+#   "httpProxy": "http://proxy.hcm.fpt.vn:80",
+
+#   "httpsProxy": "http://proxy.hcm.fpt.vn:80",
+
+#   "noProxy": "epayment.ho.fpt.vn;localhost;capam.fpt.net;capam01.fpt.net;capam02.fpt.net;mvc.inside.fpt.net;inside.fpt.net;1.52.30.70;ticket.fpt.net;inside.fpt.net;login.fpt.net;tool.fpt.net;192.*.*.*;10.*.*.*;172.*.*.*;inside.fpt.net;ort.fpt.net;eiso.ho.fpt.vn;opsview.fpt.net;mail.fpt.com.vn;ms-project.fpt.net;insidev2.itv.vn;210.245.24.35;mail.fpt.com.vn;210.245.1.67;daotao.fpt.net;a.fpt.net;bigdata-api.fpt.vn;172.27.11.142;ticketopsapi.fpt.vn;172.20.17.32;huongdan.fpt.net;172.27.228.161;mapapi.fpt.vn;bigdata-api.fpt.vn;1.52.30.86;ticketdev.fpt.net;ticketwebapi.fpt.vn;ftelscm.fpt.vn;210.245.0.129;172.30.11.153;42.116.24.243;1.52.30.84;auth.fpt.net;172.27.228.229;210.245.0.226;172.27.230.15;1.52.30.88;*.scc.fpt.vn;172.24.217.163;172.27.62.32;voicebotcampaign-agentpbx-stg.fpt.net;omniagent-api.fpt.net;voicebotcampaign-agentpbx-stg.fpt.net;172.27.228.225;172.27.230.14;git.fpt.net;portal.dev.omni.scc;*voicebotcampaign*fpt.net;gateway.dev.omni.scc;104.16.27.35;192.168.56.*;172.27.228.201;172.27.228.217;172.27.228.224;172.27.228.189;172.27.228.220;172.27.228.218;172.27.228.219;172.27.228.197;172.27.228.198;172.27.228.199;172.30.0.98;*.omni.scc;172.27.228.236;webhook.sop-fpt.online;172.27.228.238;webhook-sop-uat.fpt.vn;portal-sop-uat.fpt.vn;livechat-sop-uat.fpt.vn;gateway-sop-uat.fpt.vn;*.xyz;portal-sop-uat.fpt.vn;gateway-sop-uat.fpt.vn;webhook-sop-uat.fpt.vn;portal.sop-fpt.online;gateway.sop-fpt.online;webhook.sop-fpt.online;livechat.sop-fpt.online;gateway.sop-fpt.online;webhook-uat-sop.fpt.vn;172.24.222.90;traefik.sop-fpt.online;*-sop-dev.fpt.vn;*-sop-stg.fpt.vn;https://portal-sop.fpt.vn;172.27.228.144"
+# }},
